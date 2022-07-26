@@ -1,28 +1,31 @@
 body{
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
-#title{
-    background-color: #ff4c68;
-    color: white;
-}
+/* HEADINGS */
 
-.container-fluid{
-    padding: 3% 15% 7%;
-}
-
-h1{
-    font-family: 'Montserrat', sans-serif;
+.big-heading {
     font-size: 3.5rem;
     line-height: 1.5;
     font-weight: 900;
 }
 
-h2{
-    font-family: 'Montserrat', sans-serif;
+.price-text, .price-title {
     font-size: 3rem;
     line-height: 1.5;
     font-weight: bold;
+}
+
+/* Background Color */
+
+.colored {
+    background-color: #ff4c68;
+    color: white;
+}
+
+.white {
+    background-color: white;
 }
 
 /* Navigation Bar */
@@ -51,6 +54,22 @@ h2{
     margin: 5% 3% 5% 0;
 }
 
+/* TITLE */
+
+#title .container-fluid {
+    padding: 3% 15% 7%;
+    text-align: left;
+}
+
+.container-fluid{
+    padding: 7% 15%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
 /* Image */
 
 .title-image {
@@ -67,7 +86,6 @@ h2{
 /* FEATURES */
 
 #features {
-    padding: 7% 15%;
     background-color: #fff;
     position: relative;
 }
@@ -78,7 +96,7 @@ h2{
     color: #8f8f8f;
 }
 
-#features h3 {
+.feature-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
@@ -94,7 +112,6 @@ h2{
 }
 
 .feature-item {
-    text-align: center;
     padding: 5%;
 }
 
@@ -103,9 +120,7 @@ h2{
 /* TESTIMONIALS */
 
 #testimonials {
-    text-align: center;
     background-color: #ef8172;
-    color: white;
 }
 
 .testimonial-image {
@@ -114,11 +129,16 @@ h2{
     margin: 20px;
 }
 
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 800;
+}
+
 /* PRESS */
 
 #press {
     background-color: #ef8172;
-    text-align: center;
     padding-bottom: 5%;
 }
 
@@ -127,19 +147,36 @@ h2{
     margin: 1.5rem;
 }
 
-/* CAROUSEL */
-
-.carousel-item {
-    padding: 7% 15%;
-}
-
 /* PRICING */
 
 #pricing {
     padding: 100px;
-    text-align: center;
 }
 
 .price-item{
     padding: 3% 2%;
+}
+
+
+/* FOOTER */
+
+.ficons {
+    margin: 20px 10px;
+}
+
+#footer p {
+    color: #8f8f8f;
+}
+
+@media (max-width: 1028px) {
+
+    #title {
+        text-align: center;
+    }
+
+    .title-image{
+       position: static;
+      transform: rotate(0);
+    }
+
 }
